@@ -1,5 +1,5 @@
 # Container-vs-VMs
-Why use Docker?
+Why use containers and is Docker a container?
 
 There are a multitude of reasons that use containers.
 
@@ -10,7 +10,7 @@ Docker is not a container but a runtime, and there are other runtimes like cri-o
 Since Docker doesnt run its own OS, and instead uses the OS of the host then the footprint for each container is largely compact compared to any VM. (except when you need to run a windows container, which will result in containers of size 5GB+ , thus defeating the purpose of containers)
 
 ## Edge Computing
-The fact that containers are small in their footprint opens up a whole world of edge computing and processing which delivery better latency to the users. 
+The fact that containers are small in their footprint opens up a whole world of edge computing and processing which delivery better latency to the users, and not to mention all the IoT applications that would benefit from having computation nodes closer to users!
 
 ## Resource Optimization
 Containers by nature are versatile and because they "act" as VMs, means you can run multiple applications that "could use" the same port, but bind the port (lets say 80) to any other port (lets say 33901), which means you can run multiple workloads that use port 80 on the same machine.
@@ -80,7 +80,7 @@ You dont need to provision anything, and you dont need to configure anything, si
 
 You can still use these tools to provision some Infra like Load Balancers or Virtual Networks, even configure VMs to run Databases if you opt to deploy them outside of Kubernetes.
 
-But when it comes to containerized workloads, these tools serve no purpose. 
+But when it comes to containerized workloads, these tools serve no purpose, aside from provisioning a Kubernetes Cluster.
 # Gitops
 ![argocd12](https://github.com/AndrewSeif/Container-vs-VMs/assets/75944452/da00c738-0862-492d-b6e5-fc1ef53d467e)
 
