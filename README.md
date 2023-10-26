@@ -33,6 +33,7 @@ Once requires an OS to start and the other is starts on a running OS, but in cas
 - The bootloader loads the VM's OS.
 - The OS starts up system services, drivers, etc.
 - Finally, the OS starts the web server application.
+
 ## In a Container
 - Execute `docker run`.
 - Docker loads the container's image layers.
